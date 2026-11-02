@@ -1,0 +1,11 @@
+# .dockerignore für notes-api (Kontext: notes-api/), Stand Tag 12
+Dockerfile*
+.dockerignore
+*.md
+.git
+**/.env*
+**/*.env
+**/*.pem
+**/*.key
+**/*.test
+**/.DS_Store

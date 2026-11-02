@@ -1,0 +1,19 @@
+# .gitignore – was nie ins Repository gehört (Tag 12)
+# Secrets und lokale Werte (.env.example ist die Vorlage und darf rein)
+*.env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+.npmrc
+# Abhängigkeiten und Build-Artefakte
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+*.test
+# Betriebssystem und Editor
+.DS_Store

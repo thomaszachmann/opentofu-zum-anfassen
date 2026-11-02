@@ -1,0 +1,6 @@
+apiVersion: v2
+name: notes
+description: notes-api mit Postgres aus CloudNativePG (OpenTofu zum Anfassen, Tag 7)
+type: application
+version: 1.0.0
+appVersion: "0.4.0"

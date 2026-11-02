@@ -1,0 +1,10 @@
+# values.yaml – Standardwerte des notes-Charts
+image:
+  repository: notes-api
+  tag: "0.4.0"
+  pullPolicy: Never          # Image liegt lokal in k3s
+replicas: 1
+apiKey: lab-api-key-123      # nur Labor
+db:
+  secretName: ""             # Secret mit Schlüssel "uri" (CloudNativePG: <cluster>-app)
+host: notes.example.sslip.io

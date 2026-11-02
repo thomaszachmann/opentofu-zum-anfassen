@@ -1,0 +1,25 @@
+# .dockerignore im Projektordner – gilt, wenn der Projektordner der Build-Kontext ist.
+# Muster gelten ab der Kontext-Wurzel: Für alle Ebenen braucht es **/.
+# Secrets und lokale Werte (auch .env.example: gehört nicht ins Image)
+**/.env*
+**/*.env
+**/secrets
+**/*.pem
+**/*.key
+**/.npmrc
+# Repository, Build-Dateien, Doku
+.git
+**/.gitignore
+**/Dockerfile*
+**/.dockerignore
+**/*.md
+compose.yaml
+.hadolint.yaml
+# Abhängigkeiten und Artefakte, die der Build selbst erzeugt
+**/node_modules
+**/dist
+**/.venv
+**/__pycache__
+**/*.pyc
+**/*.test
+**/.DS_Store

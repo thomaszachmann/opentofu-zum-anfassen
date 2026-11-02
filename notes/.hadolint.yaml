@@ -1,0 +1,10 @@
+# .hadolint.yaml – gilt für alle Dockerfiles, wenn hadolint im Projektordner läuft
+failure-threshold: warning
+override:
+  error:
+    - DL3002   # letzter USER ist root
+    - DL3025   # CMD/ENTRYPOINT in Shell-Form
+trustedRegistries:
+  - docker.io
+  - gcr.io
+  - ghcr.io
